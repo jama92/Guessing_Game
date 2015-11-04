@@ -63,7 +63,7 @@ else {
 
 var questionFive = prompt("What is 20 + 3?");
 
-if (questionFive === 23) {
+if (questionFive === "23") {
 
 	numberCorrect ++;
 	alert("Correct!");
