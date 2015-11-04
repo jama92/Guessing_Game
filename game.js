@@ -47,6 +47,21 @@ else {
 }
 
 
+var questionFour = prompt("Yes or No: is football my favorite sport?");
+questionFour = questionFour.toLowerCase();
+
+if (questionFour === "yes" || questionFour === "y") {
+
+	numberCorrect ++;
+	alert("Correct!");
+}
+
+else {
+
+	alert("Incorrect!");
+}
+
+
 alert("You got " + numberCorrect + " correct!");
 
 
