@@ -1,5 +1,5 @@
 
-function askQuestions() {
+function askQuestionOne() {
 
 	var questionOne = prompt("Yes or No: did I grow up in Seattle?");
 	questionOne = questionOne.toLowerCase();
@@ -19,7 +19,11 @@ function askQuestions() {
 
 	}
 
-	document.getElementById('questionOne').innerHTML += ' Yes';
+    document.getElementById('questionOne').innerHTML += ' Yes';
+	askQuestionTwo();
+}
+
+function askQuestionTwo() {	
 
 	var questionTwo = prompt("Yes or No: did I attend UW");
 	questionTwo = questionTwo.toLowerCase();
@@ -37,8 +41,10 @@ function askQuestions() {
 	}
 
 	document.getElementById('questionTwo').innerHTML += ' Yes';
-	
+	askQuestionThree();
+}
 
+function askQuestionThree() {
 
 	var questionThree = prompt("Yes or No: is baseball my favorite sport?");
 	questionThree = questionThree.toLowerCase();
@@ -57,8 +63,10 @@ function askQuestions() {
 	}
 
 	document.getElementById('questionThree').innerHTML += ' No';
-	
+	askQuestionFour();
+}
 
+function askQuestionFour() {
 
 	var questionFour = prompt("Yes or No: is football my favorite sport?");
 	questionFour = questionFour.toLowerCase();
@@ -77,8 +85,10 @@ function askQuestions() {
 	}
 
 	document.getElementById('questionFour').innerHTML += ' Yes';
-	
+	askQuestionFive();
+}
 
+function askQuestionFive() {
 
 	var questionFive = prompt("What is 20 + 3?");
 
@@ -96,13 +106,12 @@ function askQuestions() {
 	}
 
 	document.getElementById('questionFive').innerHTML += ' 23';
-	
 
 	alert("You got " + numberCorrect + " correct!");
 
 }
 
-askQuestions();
+askQuestionOne();
 
 
 
